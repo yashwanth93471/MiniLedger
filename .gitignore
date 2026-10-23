@@ -1,0 +1,51 @@
+# Node.js dependencies and generated output
+node_modules/
+/dist/
+/build/
+/backend/build/
+/coverage/
+*.tsbuildinfo
+
+# React Native and Metro
+.expo/
+.metro-health-check*
+metro-cache/
+
+# Android generated files and local configuration
+.gradle/
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/local.properties
+*.keystore
+*.jks
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE temporary files
+.idea/
+*.iml
+*.swp
+*.swo
+.vscode/.history/
+.vscode/*.log
+# Local signing keys and screenshots
+mobile/android/app/debug.keystore
+mobile/miniledger-screen.png
+mobile/android/app/debug.keystore

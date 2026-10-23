@@ -1,0 +1,29 @@
+{
+  "name": "miniledger-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "typecheck": "npm run prisma:generate && tsc --noEmit",
+    "build": "npm run prisma:generate && tsc",
+    "start": "node build/server.js",
+    "prisma:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:check": "tsx src/scripts/check-database.ts",
+    "test": "tsx --test test/**/*.test.ts"
+  },
+  "dependencies": {
+    "@fastify/jwt": "10.2.5",
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1",
+    "dotenv": "16.6.1",
+    "fastify": "^5.12.7",
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "prisma": "7.10.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
